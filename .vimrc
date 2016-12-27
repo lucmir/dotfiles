@@ -44,6 +44,15 @@ let g:ctrlp_user_command = {
 " leader y as yank to OS clipboard
 vmap <leader>y "+y
 
+" leader leader as :nohlsearch
+map <leader><space> :nohlsearch<CR>
+
+" set leader w as :w
+noremap <leader>w :w<CR>
+
+" set leader q as :q
+noremap <leader>q :q<CR>
+
 " reload vim
 map <silent> <leader>r :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
@@ -52,12 +61,6 @@ noremap <C-J> <C-W>j<C-W>_
 noremap <C-k> <C-W>k<C-W>_
 noremap <C-h> <C-W>h<C-W>_
 noremap <C-l> <C-W>l<C-W>_
-
-" set leader w as :w
-noremap <leader>w :w<CR>
-
-" set leader q as :q
-noremap <leader>q :q<CR>
 
 map <F3> :NERDTreeFind<CR>
 
