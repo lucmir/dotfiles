@@ -31,6 +31,7 @@ let mapleader = "\<Space>"
 let g:ctrlp_by_filename = 1
 let g:ctrlp_max_files = 0
 let g:ctrlp_working_path_mode = 'raw'
+let g:ctrlp_show_hidden = 1
 
 " ignores entries specified in .gitignore.
 let g:ctrlp_user_command = {
@@ -96,6 +97,7 @@ filetype plugin indent on
 
 " nerdtree"
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 " column 80 indication"
 "let &colorcolumn=join(range(81,999),",")
@@ -120,5 +122,5 @@ syntax on
 set background=dark
 colorscheme monokai
 
-hi Search ctermbg=208
-hi Search guibg=#FD971F
+hi Search ctermbg=118
+hi Search guibg=#A6E22E
