@@ -342,7 +342,7 @@ you should place your code here."
                              ("~/Dropbox/notes/gtd/trash.org" :level . 1)
                              ))
 
-  ;;(setq org-todo-keywords '((sequence "TODO(t)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")))
+  (setq org-todo-keywords '((sequence "TODO(t)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")))
 
   (setq neo-theme 'icons)
 
