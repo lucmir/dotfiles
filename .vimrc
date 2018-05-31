@@ -89,8 +89,14 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'crusoexia/vim-monokai'
+Plugin 'neilagabriel/vim-geeknote'
+
+autocmd VimEnter * SyntasticToggleMode " disable syntastic by default"
 
 map <F2> :NERDTreeToggle<CR>
+
+noremap <F8> :Geeknote<CR>
+let g:GeeknoteFormat="markdown"
 
 call vundle#end()
 filetype plugin indent on
@@ -100,10 +106,10 @@ map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
 " column 80 indication"
-"let &colorcolumn=join(range(81,999),",")
-"let &colorcolumn="80".join(range(120,999),",")
+" let &colorcolumn=join(range(81,999),",")
+" let &colorcolumn="80".join(range(120,999),",")
 let &colorcolumn="80"
-"highlight ColorColumn ctermbg=235 guibg=#2c2d27
+" highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 set runtimepath^=~/.vim/bundle/ag
 let g:ag_working_path_mode="r"
@@ -124,3 +130,7 @@ colorscheme monokai
 
 hi Search ctermbg=118
 hi Search guibg=#A6E22E
+
+set nobackup
+set noswapfile
+
