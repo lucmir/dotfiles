@@ -329,16 +329,18 @@ you should place your code here."
                            "~/Dropbox/notes/gtd/inbox.org"
                            "~/Dropbox/notes/gtd/tickler.org"))
 
-  (setq org-capture-templates '(("t" "Todo [inbox]" entry
-                                 (file+headline "~/Dropbox/notes/gtd/inbox.org" "Tasks")
+  (setq org-capture-templates '(("i" "Inbox" entry
+                                 (file+headline "~/Dropbox/notes/gtd/inbox.org" "Inbox")
                                  "* TODO %i%?")
-                                ("T" "Tickler" entry
+                                ("t" "Tickler" entry
                                  (file+headline "~/Dropbox/notes/gtd/tickler.org" "Tickler")
                                  "* %i%? \n %U")))
 
-  (setq org-refile-targets '(("~/Dropbox/notes/gtd/gtd.org" :maxlevel . 2)
+  (setq org-refile-use-outline-path 'file)
+  (setq org-outline-path-complete-in-steps nil)
+  (setq org-refile-targets '(("~/Dropbox/notes/gtd/gtd.org" :maxlevel . 1)
                              ("~/Dropbox/notes/gtd/someday.org" :level . 1)
-                             ("~/Dropbox/notes/gtd/tickler.org" :maxlevel . 2)
+                             ("~/Dropbox/notes/gtd/tickler.org" :level . 1)
                              ("~/Dropbox/notes/gtd/trash.org" :level . 1)
                              ))
 
