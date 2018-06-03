@@ -7,3 +7,11 @@ Dotfiles
 
 ### Tmux
 ![Vimrc](https://github.com/lucmir/dotfiles/blob/master/tmux.png)
+
+
+### Spacemacs
+
+Install Spacemacs, copy *.spacemacs* to home folder, open Spacemacs and run:
+```
+M-x all-the-icons-install-fonts
+```
