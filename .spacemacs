@@ -344,6 +344,17 @@ you should place your code here."
                              ("~/Dropbox/notes/gtd/trash.org" :level . 1)
                              ))
 
+  (custom-set-faces
+   '(org-level-1 ((t (:inherit outline-1 :height 1.0 ))))
+   '(org-level-2 ((t (:inherit outline-2 :height 1.0 ))))
+   '(org-level-3 ((t (:inherit outline-3 :height 1.0 ))))
+   '(org-level-4 ((t (:inherit outline-3 :height 1.0 ))))
+   '(org-level-5 ((t (:inherit outline-3 :height 1.0 ))))
+   '(org-level-6 ((t (:inherit outline-3 :height 1.0 ))))
+   '(org-level-7 ((t (:inherit outline-3 :height 1.0 ))))
+   '(org-level-8 ((t (:inherit outline-3 :height 1.0 ))))
+   )
+
   (setq org-todo-keywords '((sequence "TODO(t)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)")))
 
   (setq neo-theme 'icons)
