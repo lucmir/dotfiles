@@ -344,6 +344,12 @@ you should place your code here."
                              ("~/Dropbox/notes/gtd/trash.org" :level . 1)
                              ))
 
+  (defun org-agenda-show-agendas ()
+    (interactive)
+    (org-agenda nil "n"))
+
+  (spacemacs/set-leader-keys "an" 'org-agenda-show-agendas)
+
   (custom-set-faces
    '(org-level-1 ((t (:inherit outline-1 :height 1.0 ))))
    '(org-level-2 ((t (:inherit outline-2 :height 1.0 ))))
@@ -388,6 +394,17 @@ you should place your code here."
      ("#F309DF" . 85)
      ("#3C3D37" . 100))))
  '(magit-diff-use-overlays nil)
+ '(org-agenda-custom-commands
+   (quote
+    (("n" "Agendas"
+      ((agenda ""
+               ((org-agenda-overriding-header "Pessoal")))
+       (agenda ""
+               ((org-agenda-overriding-header "TW")
+                (org-agenda-files
+                 (quote
+                  ("/Users/lmcunha/Dropbox/notes/tw/todo.org"))))))
+      nil))))
  '(org-agenda-files nil)
  '(package-selected-packages
    (quote
@@ -424,4 +441,11 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(org-level-1 ((t (:inherit outline-1 :height 1.0))))
+ '(org-level-2 ((t (:inherit outline-2 :height 1.0))))
+ '(org-level-3 ((t (:inherit outline-3 :height 1.0))))
+ '(org-level-4 ((t (:inherit outline-3 :height 1.0))))
+ '(org-level-5 ((t (:inherit outline-3 :height 1.0))))
+ '(org-level-6 ((t (:inherit outline-3 :height 1.0))))
+ '(org-level-7 ((t (:inherit outline-3 :height 1.0))))
+ '(org-level-8 ((t (:inherit outline-3 :height 1.0)))))
