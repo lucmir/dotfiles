@@ -403,7 +403,7 @@ you should place your code here."
                ((org-agenda-overriding-header "TW")
                 (org-agenda-files
                  (quote
-                  ("/Users/lmcunha/Dropbox/notes/tw/todo.org"))))))
+                  ("~/Dropbox/notes/tw/todo.org"))))))
       nil))))
  '(org-agenda-files nil)
  '(package-selected-packages
