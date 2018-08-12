@@ -401,12 +401,13 @@ you should place your code here."
    (quote
     (("n" "Agendas"
       ((agenda ""
-               ((org-agenda-overriding-header "Pessoal")))
-       (agenda ""
-               ((org-agenda-overriding-header "TW")
-                (org-agenda-files
-                 (quote
-                  ("~/Dropbox/notes/tw/todo.org"))))))
+               ((org-agenda-overriding-header "AGENDA")))
+;;       (agenda ""
+;;               ((org-agenda-overriding-header "TW")
+;;                (org-agenda-files
+;;                 (quote
+;;                  ("~/Dropbox/notes/tw/todo.org")))))
+      )
       nil))))
  '(org-agenda-files nil)
  '(org-habit-preceding-days 7)
