@@ -408,14 +408,28 @@ you should place your code here."
      ("#F309DF" . 85)
      ("#3C3D37" . 100))))
  '(magit-diff-use-overlays nil)
+
  '(org-agenda-custom-commands
    (quote
     (("n" "Agendas"
-      ((agenda ""
-               ((org-agenda-overriding-header "AGENDA"))))
-      nil))))
+      (
+       (agenda ""
+               ((org-agenda-overriding-header "AGENDA"))
+               )
+       (agenda ""
+               ((org-agenda-overriding-header "Civic")
+                (org-agenda-files
+                 (quote ("~/Dropbox/notes/civic/tasks.org"))
+                 )
+                )
+               )
+       )
+      nil))
+    )
+   )
+
  '(org-agenda-files nil)
- '(org-agenda-start-with-follow-mode t)
+ ;;'(org-agenda-start-with-follow-mode t)
  '(org-habit-preceding-days 7)
  '(org-habit-show-habits-only-for-today t)
  '(org-modules
