@@ -89,7 +89,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'crusoexia/vim-monokai'
-Plugin 'neilagabriel/vim-geeknote'
+" Plugin 'neilagabriel/vim-geeknote'
 
 autocmd VimEnter * SyntasticToggleMode " disable syntastic by default"
 
