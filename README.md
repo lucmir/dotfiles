@@ -15,3 +15,5 @@ Install Spacemacs, copy *.spacemacs* to home folder, open Spacemacs and run:
 ```
 M-x all-the-icons-install-fonts
 ```
+
+Install [The Silver Searcher](https://github.com/ggreer/the_silver_searcher#installing).
