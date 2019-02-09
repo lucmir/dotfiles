@@ -4,6 +4,8 @@ Dotfiles
 ### Vimrc
 ![Vimrc](https://github.com/lucmir/dotfiles/blob/master/vimrc.png)
 
+Install [Vundle](https://github.com/VundleVim/Vundle.vim), open vim and run `VundleInstall`.
+
 
 ### Tmux
 ![Vimrc](https://github.com/lucmir/dotfiles/blob/master/tmux.png)
